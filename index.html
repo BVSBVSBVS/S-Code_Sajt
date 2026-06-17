@@ -40,7 +40,6 @@
 
     <style>
         ::selection { background-color: #2563eb; color: white; }
-        /* Suptilna mrežica u pozadini da razbije prazninu */
         .bg-grid-pattern {
             background-image: radial-gradient(rgba(156, 163, 175, 0.2) 1px, transparent 1px);
             background-size: 24px 24px;
@@ -76,6 +75,7 @@
         </div>
     </nav>
 
+    <!-- HERO SEKCIJA -->
     <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto flex flex-col justify-center min-h-[80vh]">
         <div class="max-w-3xl">
             <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.1]">
@@ -93,29 +93,17 @@
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-16 items-center">
-            <div class="w-full md:w-5/12">
-                <div class="aspect-[4/5] bg-zinc-200 dark:bg-zinc-800 rounded-2xl overflow-hidden relative">
-                    <img src="adam.jpg" alt="Adam Ignjatovic" class="object-cover w-full h-full" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlN2U1ZTQiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTZweCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzcxNzE3YSIgZHk9Ii4zZW0iPlR2b2phIHNsaWthIChhZGFtLmpwZyk8L3RleHQ+PC9zdmc+'">
-                </div>
-            </div>
-            
-            <div class="w-full md:w-7/12">
-                <h4 class="text-brand font-semibold text-sm mb-2 uppercase tracking-wider" data-translate="about-badge">Who we are</h4>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" data-translate="about-title">Built on code. Driven by results.</h2>
-                <div class="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    <p data-translate="about-p1">S-Code Solutions was founded with a clear mission: to bring high-quality, agency-level web development to businesses that want to dominate their local markets.</p>
-                    <p data-translate="about-p2">My name is Adam, and I personally oversee every project. I believe that a website shouldn't just be a digital flyer; it should be an active tool that brings you clients.</p>
-                </div>
-                <div class="mt-8 border-l-4 border-brand pl-4">
-                    <p class="font-semibold text-zinc-900 dark:text-white" data-translate="about-quote">"We don't just write code, we build digital assets for your business."</p>
-                    <span class="text-sm text-zinc-500 mt-1 block">— Adam Ignjatović, Founder</span>
-                </div>
-            </div>
+    <!-- O NAMA SEKCIJA (Bez slike, profesionalan agencijski tekst) -->
+    <section id="about" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h4 class="text-brand font-semibold text-sm mb-2 uppercase tracking-wider" data-translate="about-badge">Who we are</h4>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8" data-translate="about-title">Driven by performance and clean code.</h2>
+        <div class="space-y-6 text-zinc-600 dark:text-zinc-400 leading-relaxed text-lg">
+            <p data-translate="about-p1">S-Code Solutions is a digital agency focused on delivering high-quality web solutions for modern businesses. We believe that a powerful online presence is the foundation of digital success.</p>
+            <p data-translate="about-p2">Our approach combines cutting-edge technology with intuitive design. We don't just build websites; we create scalable digital assets engineered to drive growth, engage users, and elevate your brand in a competitive market.</p>
         </div>
     </section>
 
+    <!-- USLUGE -->
     <section id="services" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-200 dark:border-zinc-800">
         <div class="mb-16 md:text-center max-w-3xl md:mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-translate="services-title">What we can do for you</h2>
@@ -140,6 +128,7 @@
         </div>
     </section>
 
+    <!-- PROCES RADA -->
     <section class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-200 dark:border-zinc-800">
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-translate="process-title">How we work</h2>
@@ -164,6 +153,7 @@
         </div>
     </section>
 
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-200 dark:border-zinc-800">
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-2" data-translate="portfolio-title">Recent Projects</h2>
@@ -176,6 +166,7 @@
         </div>
     </section>
 
+    <!-- KONTAKT -->
     <section id="contact" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-200 dark:border-zinc-800">
         <div class="bg-brand text-white rounded-3xl p-10 md:p-16 flex flex-col md:flex-row justify-between items-center gap-10">
             <div class="max-w-xl">
@@ -189,10 +180,12 @@
         </div>
     </section>
 
-    <footer class="py-10 text-center mt-10">
-        <p class="text-sm text-zinc-500 font-medium">© 2026 S-Code Solutions. Belgrade, Serbia.</p>
+    <!-- FOOTER -->
+    <footer class="py-10 text-center mt-10 border-t border-zinc-200 dark:border-zinc-800">
+        <p class="text-sm text-zinc-500 font-medium" data-translate="footer-text">© 2026 S-Code Solutions. All rights reserved. | Founder: Adam Ignjatović</p>
     </footer>
 
+    <!-- SKRIPTE -->
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -237,10 +230,9 @@
                 "hero-desc": "Dizajniramo i programiramo brze, pouzdane sajtove koji izdvajaju vaš biznis iz mase. Od prve linije koda do redovnog tehničkog održavanja.",
                 "hero-btn-1": "Započnite Projekat",
                 "about-badge": "Ko smo mi",
-                "about-title": "Sajt mora da donosi rezultate.",
-                "about-p1": "S-Code Solutions je nastao sa jasnom misijom: da ponudimo vrhunsku izradu sajtova lokalnim biznisima koji žele da dominiraju tržištem.",
-                "about-p2": "Moje ime je Adam i lično vodim svaki projekat. Verujem da sajt ne sme da bude samo digitalni flajer, već aktivna alatka koja vam donosi klijente.",
-                "about-quote": "\"Mi ne pišemo samo kod, mi pravimo digitalni kapital za vaš biznis.\"",
+                "about-title": "Fokusirani na performanse i čist kod.",
+                "about-p1": "S-Code Solutions je digitalna agencija posvećena isporuci visokokvalitetnih web rešenja za moderne biznise. Verujemo da je snažno online prisustvo temelj digitalnog uspeha.",
+                "about-p2": "Naš pristup spaja najnoviju tehnologiju sa intuitivnim dizajnom. Mi ne pravimo samo sajtove; stvaramo skalabilne digitalne alate dizajnirane da donesu rast, angažuju korisnike i istaknu vaš brend na tržištu.",
                 "services-title": "Šta možemo da uradimo za vas",
                 "service-1-title": "Web Programiranje",
                 "service-1-desc": "Unikatni sajtovi, landing stranice i prodavnice. Koristimo najnovije tehnologije kako bismo osigurali maksimalnu brzinu i savršen prikaz na telefonima.",
@@ -257,7 +249,8 @@
                 "portfolio-wip-title": "Projekti u pripremi",
                 "portfolio-wip-desc": "Trenutno dokumentujemo naše najnovije projekte i pišemo studije slučaja. Biće objavljeni uskoro.",
                 "contact-title": "Spremni ste za sledeći korak?",
-                "contact-desc": "Javite se da popričamo o tome kako možemo da unapredimo vaš biznis."
+                "contact-desc": "Javite se da popričamo o tome kako možemo da unapredimo vaš biznis.",
+                "footer-text": "© 2026 S-Code Solutions. Sva prava zadržana. | Osnivač: Adam Ignjatović"
             },
             eng: {
                 "nav-services": "Services",
@@ -268,10 +261,9 @@
                 "hero-desc": "We design and build fast, reliable websites that help your business stand out. From the first line of code to continuous maintenance.",
                 "hero-btn-1": "Start Your Project",
                 "about-badge": "Who we are",
-                "about-title": "Built on code. Driven by results.",
-                "about-p1": "S-Code Solutions was founded with a clear mission: to bring high-quality, agency-level web development to businesses that want to dominate their local markets.",
-                "about-p2": "My name is Adam, and I personally oversee every project. I believe that a website shouldn't just be a digital flyer; it should be an active tool that brings you clients.",
-                "about-quote": "\"We don't just write code, we build digital assets for your business.\"",
+                "about-title": "Driven by performance and clean code.",
+                "about-p1": "S-Code Solutions is a digital agency focused on delivering high-quality web solutions for modern businesses. We believe that a powerful online presence is the foundation of digital success.",
+                "about-p2": "Our approach combines cutting-edge technology with intuitive design. We don't just build websites; we create scalable digital assets engineered to drive growth, engage users, and elevate your brand in a competitive market.",
                 "services-title": "What we can do for you",
                 "service-1-title": "Web Development",
                 "service-1-desc": "Custom landing pages, corporate websites, and e-commerce solutions. Built with modern technologies to ensure lightning-fast loading speeds and perfect mobile responsiveness.",
@@ -288,7 +280,8 @@
                 "portfolio-wip-title": "Case Studies in Progress",
                 "portfolio-wip-desc": "We are currently documenting our latest projects. Check back soon to see our updated portfolio.",
                 "contact-title": "Ready to build something great?",
-                "contact-desc": "Let's discuss how we can help your business grow online."
+                "contact-desc": "Let's discuss how we can help your business grow online.",
+                "footer-text": "© 2026 S-Code Solutions. All rights reserved. | Founder: Adam Ignjatović"
             }
         };
 
